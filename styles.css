@@ -61,3 +61,7 @@ footer{
 .about{
     margin-top: 50px;
 }
+a:focus-visible{
+    outline: 3px skyblue;
+    outline-offset: 2px ;
+}
