@@ -53,6 +53,7 @@ footer{
     background-color: tan;
     padding: 20px;
 }
-#about{
+/* No ID selector was used for styling purpose, classes and element selector were used instead. */
+.about{
     margin-top: 50px;
 }
