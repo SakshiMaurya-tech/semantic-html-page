@@ -10,10 +10,14 @@ body{
     text-align: center;
 }
 /* Base font size assumed to be : 16px */
+a{
+    color: blue;
+}
 header{
     background-color: tan;
     padding: 50px 20px;
 }
+/* /It fixed the specificity by using a more specific selector instead of overrides */
 header a{
     display: inline-block;
     background-color: lightsalmon;
