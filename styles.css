@@ -9,6 +9,7 @@ body{
     background-color: whitesmoke;
     text-align: center;
 }
+/* Base font size assumed to be : 16px */
 header{
     background-color: tan;
     padding: 50px 20px;
