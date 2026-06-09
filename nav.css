@@ -1,3 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+    .Navigation-links{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .Navigation-links li{
 display: inline-block;
 }
@@ -18,6 +32,17 @@ display: inline-block;
 .dropdown-menu{
     list-style: none;
 }
+.Navigation-links{
+    display: flex;
+    gap: 20px;
+    flex-grow: 1; 
+    /* links can use extra space */
+    flex-shrink: 1;
+    /* limks can shrink or reduce screen */
+    flex-basis:auto;
+    /* start from content size */
+    justify-content: center;
+}
 nav{
     position: fixed;
     top: 0;
@@ -25,29 +50,21 @@ nav{
     width: 100%;
 }
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: burlywood;
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 a:hover{
     background-color: beige;
 }
 a:focus-visible{
     outline: 3px solid blue;
-}
-.logo{
-    display: inline-block;
-}
-.Navigation-links{
-    display: inline-block;
-}
-.CTA-Button{
-    display: inline-block;
-}
-.Navigation-links{
-    margin-left: 100px;
-}
-.CTA-Button{
-    margin-left: 100px;
 }
 .dropdown{
     position: relative;
