@@ -23,3 +23,18 @@ This project is a horizontal navigation bar created using HTML and CSS.
 ## Author
 
 Sakshi Maurya
+
+Day 4-page layout
+part A:
+add sticky header
+implement responsive product grid
+desktop: 3column
+tablet :2column
+mobile: 1 column
+test at 1200px, 768px, 375px
+
+part B:
+create full page layout using flexbox
+add fixed-width sidebar
+add horizontal article cards
+add header and footer

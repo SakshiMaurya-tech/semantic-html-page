@@ -9,6 +9,8 @@ body{
 }
 .card{
     flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid skyblue;
     padding: 15px;
     border-radius: 10px;
@@ -27,4 +29,27 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 15px;
+    z-index: 100;
+}
+/* desktop-3column */
+.card{
+    flex: 1 1 calc(33.33% - 20px);
+}
+/* tablet-2column */
+@media(max-width: 1199px){
+    .card{
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+/* mobile-1column */
+@media(max-width: 599px){
+    .card{
+        flex: 1 1 100%;
+    }
 }
