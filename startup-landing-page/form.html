@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="fullname">Full Name</label>
+            <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            aria-required="true"
+            required
+            >
+            <label for="email">E-mail</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            aria-required="true"
+            required
+            >
+            <label for="subject">Subject</label>
+            <select
+            id="subject"
+            name="subject"
+            aria-required="true"
+            required
+            >
+            <option value="">Select Subject</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback </option>
+            <option value="sales">Sales</option>
+            <option value="other">Other</option>
+            </select>
+            <label for="message">Message</label>
+            <textarea
+            id="message"
+            name="message"
+            rows="5"
+            aria-required="true"
+            required
+            ></textarea>
+            <fieldset>
+                <legend>Newsletter Subscription</legend>
+                <div class="checkbox-group">
+                <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                >
+                <label for="newsletter">Subscribe to newsletter</label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="success-message"
+        class="success-message">
+            Form submitted successfully!
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
